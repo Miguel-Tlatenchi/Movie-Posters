@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#41D3BD</color>
+    <color name="colorAccent">#fda14f</color>
+    <color name="colorTextIcons">#ffffffff</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorRatingActive">#fda14f</color>
+    <color name="colorRatingInActive">#c9c9d1</color>
+    <color name="colorBackground">#eeeeee</color>
+
+</resources>
