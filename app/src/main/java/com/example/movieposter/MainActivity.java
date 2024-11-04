@@ -62,6 +62,62 @@ public class MainActivity extends AppCompatActivity implements PosterListener {
         spiderman3.story = "Spider-Man must fight off the alien Venom";
         posterList.add(spiderman3);
 
+        Poster amazingSpiderman1 = new Poster();
+        amazingSpiderman1.image = R.drawable.amazing_spiderman1;
+        amazingSpiderman1.name = "Amazing Spider-Man";
+        amazingSpiderman1.createdBy = "Marc Webb";
+        amazingSpiderman1.rating = 5f;
+        amazingSpiderman1.story = "A new take on the Spider-Man story";
+        posterList.add(amazingSpiderman1);
+
+        Poster amazingSpiderman2 = new Poster();
+        amazingSpiderman2.image = R.drawable.amazing_spiderman2;
+        amazingSpiderman2.name = "Amazing Spider-Man 2";
+        amazingSpiderman2.createdBy = "Marc Webb";
+        amazingSpiderman2.rating = 5f;
+        amazingSpiderman2.story = "Spider-Man's toughest battle yet";
+        posterList.add(amazingSpiderman2);
+
+        Poster homecoming = new Poster();
+        homecoming.image = R.drawable.spiderman_homecoming;
+        homecoming.name = "Spider-Man: Homecoming";
+        homecoming.createdBy = "Jon Watts";
+        homecoming.rating = 5f;
+        homecoming.story = "Peter learns to balance his life with Spider-Man's";
+        posterList.add(homecoming);
+
+        Poster farFromHome = new Poster();
+        farFromHome.image = R.drawable.spiderman_far_from_home;
+        farFromHome.name = "Spider-Man: Far From Home";
+        farFromHome.createdBy = "Jon Watts";
+        farFromHome.rating = 5f;
+        farFromHome.story = "Spider-Man travels to europe";
+        posterList.add(farFromHome);
+
+        Poster noWayHome = new Poster();
+        noWayHome.image = R.drawable.spiderman_no_way_home;
+        noWayHome.name = "Spider-Man: No Way Home";
+        noWayHome.createdBy = "Jon Watts";
+        noWayHome.rating = 5f;
+        noWayHome.story = "Spider-Man fights familiar enemies";
+        posterList.add(noWayHome);
+
+        Poster intoSpiderverse = new Poster();
+        intoSpiderverse.image = R.drawable.spiderman_into_the_spiderverse;
+        intoSpiderverse.name = "Spider-Man: Into the Spider-verse";
+        intoSpiderverse.createdBy = "Sony";
+        intoSpiderverse.rating = 5f;
+        intoSpiderverse.story = "Miles learns what it means to be Spider-Man";
+        posterList.add(intoSpiderverse);
+
+        Poster accrossSpiderverse = new Poster();
+        accrossSpiderverse.image = R.drawable.spiderman_accross_the_spiderverse;
+        accrossSpiderverse.name = "Spider-Man: Across the Spider-verse";
+        accrossSpiderverse.createdBy = "Sony";
+        accrossSpiderverse.rating = 5f;
+        accrossSpiderverse.story = "Miles learns about the spider society";
+        posterList.add(accrossSpiderverse);
+
 
         final PosterAdapter posterAdapter = new PosterAdapter(posterList, this);
         postersRecyclerView.setAdapter(posterAdapter);
