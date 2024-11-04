@@ -35,12 +35,22 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
     }
 
     private List<Poster> posterList;
+
+    /**
+     * MAkes a PosterAdapter with a list of posters along with a listener
+     * @param posterList List of Poster objects to display
+     * @param postersListener Listener to handle poster selection action
+     */
     public PosterAdapter(List<Poster> posterList, PosterListener postersListener) {
         this.posterList = posterList;
         this.postersListener = postersListener;
     }
     private PosterListener postersListener;
 
+    /**
+     * gets list of selected posters
+     * @return list of selected posters
+     */
     public List<Poster> getSelectedPosters(){
         List<Poster> selectedPosters = new ArrayList<>();
         for(Poster poster : this.posterList) {
@@ -52,6 +62,9 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
     }
 
 
+    /**
+     * ViewHolder class that represents each poster in teh RecyclerView
+     */
     class PosterViewHolder extends RecyclerView.ViewHolder {
 
         ConstraintLayout layoutPosters;
@@ -61,6 +74,11 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
         TextView textName, textCreatedBy, textStory;
         RatingBar ratingBar;
         ImageView imageSelected;
+
+        /**
+         * Creates PosterViewHolder and initializes its views
+         * @param itemView view of the poster item
+         */
         public PosterViewHolder(@NonNull View itemView) {
             super(itemView);
             layoutPosters = itemView.findViewById(R.id.layoutPosters);
@@ -73,6 +91,11 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
             imageSelected = itemView.findViewById(R.id.imageSelected);
         }
 
+        /**
+         * Binds poster data to the views and sets up click listeners to handle
+         * selection and deselection of posters
+         * @param poster Poster object to bind to view holder
+         */
         void bindPosters(final Poster poster) {
             imagePoster.setImageResource(poster.image);
             textName.setText(poster.name);

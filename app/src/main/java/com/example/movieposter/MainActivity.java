@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements PosterListener {
         RecyclerView postersRecyclerView = findViewById(R.id.postersRecyclerView);
         buttonAddToWatchlist = findViewById(R.id.buttonAddToWatchlist);
 
-        //prepare data
+        //prepare posters
 
         List<Poster> posterList = new ArrayList<>();
 
@@ -140,6 +140,10 @@ public class MainActivity extends AppCompatActivity implements PosterListener {
         });
     }
 
+    /**
+     * Handles visibility of the 'add to watchlist' button based on poster selection status
+     * @param isSelected boolean indicating if the poster is selected(true) or deselected(false).
+     */
     @Override
     public void onPosterAction(boolean isSelected) {
         if(isSelected){
